@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lottery</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,700,800">
+
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <style>
+    body {
+      height: 100%;
+      padding-top: 3.0rem;
+      font-family:Montserrat Alternates;
+      background-color: black;
+      background-image: url('images/phil-derbyshire-casino-paradise-06091401-2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+ 
+    $("#btn-show-4").click(function(){
+      for (let i = 1; i < 10; i++) {
+        var ballRow1rand1 = Math.floor((Math.random() * 8) + 1);
+        var ballRow1rand2 = Math.floor((Math.random() * 8) + 1);
+        var ballRow1rand3 = Math.floor((Math.random() * 8) + 1);
+        var ballRow1rand4 = Math.floor((Math.random() * 8) + 1);
+        $('#ballRow4'+i+'-1').attr("src", "images/bola"+ballRow1rand1+".png");
+        $('#ballRow4'+i+'-2').attr("src", "images/bola"+ballRow1rand2+".png");
+        $('#ballRow4'+i+'-3').attr("src", "images/bola"+ballRow1rand3+".png");
+        $('#ballRow4'+i+'-4').attr("src", "images/bola"+ballRow1rand4+".png");
+      }
+    });
+
+    $("#btn-show-5").click(function(){
+      for (let i = 1; i < 10; i++) {
+        var ballRow2rand1 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand2 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand3 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand4 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand5 = Math.floor((Math.random() * 8) + 1);
+        $('#ballRow5'+i+'-1').attr("src", "images/bola"+ballRow2rand1+".png");
+        $('#ballRow5'+i+'-2').attr("src", "images/bola"+ballRow2rand2+".png");
+        $('#ballRow5'+i+'-3').attr("src", "images/bola"+ballRow2rand3+".png");
+        $('#ballRow5'+i+'-4').attr("src", "images/bola"+ballRow2rand4+".png");
+        $('#ballRow5'+i+'-5').attr("src", "images/bola"+ballRow2rand5+".png");
+      }
+    });
+
+    $("#btn-show-6").click(function(){
+      for (let i = 1; i < 10; i++) {
+        var ballRow2rand1 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand2 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand3 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand4 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand5 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand6 = Math.floor((Math.random() * 8) + 1);
+        $('#ballRow6'+i+'-1').attr("src", "images/bola"+ballRow2rand1+".png");
+        $('#ballRow6'+i+'-2').attr("src", "images/bola"+ballRow2rand2+".png");
+        $('#ballRow6'+i+'-3').attr("src", "images/bola"+ballRow2rand3+".png");
+        $('#ballRow6'+i+'-4').attr("src", "images/bola"+ballRow2rand4+".png");
+        $('#ballRow6'+i+'-5').attr("src", "images/bola"+ballRow2rand5+".png");
+        $('#ballRow6'+i+'-6').attr("src", "images/bola"+ballRow2rand6+".png");
+      }
+    });
+
+    $("#btn-show-7").click(function(){
+      for (let i = 1; i < 10; i++) {
+        var ballRow2rand1 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand2 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand3 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand4 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand5 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand6 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand7 = Math.floor((Math.random() * 8) + 1);
+        $('#ballRow7'+i+'-1').attr("src", "images/bola"+ballRow2rand1+".png");
+        $('#ballRow7'+i+'-2').attr("src", "images/bola"+ballRow2rand2+".png");
+        $('#ballRow7'+i+'-3').attr("src", "images/bola"+ballRow2rand3+".png");
+        $('#ballRow7'+i+'-4').attr("src", "images/bola"+ballRow2rand4+".png");
+        $('#ballRow7'+i+'-5').attr("src", "images/bola"+ballRow2rand5+".png");
+        $('#ballRow7'+i+'-6').attr("src", "images/bola"+ballRow2rand6+".png");
+        $('#ballRow7'+i+'-6').attr("src", "images/bola"+ballRow2rand7+".png");
+      }
+    });
+
+    $("#btn-show-8").click(function(){
+      for (let i = 1; i < 10; i++) {
+        var ballRow2rand1 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand2 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand3 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand4 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand5 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand6 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand7 = Math.floor((Math.random() * 8) + 1);
+        var ballRow2rand8 = Math.floor((Math.random() * 8) + 1);
+        $('#ballRow8'+i+'-1').attr("src", "images/bola"+ballRow2rand1+".png");
+        $('#ballRow8'+i+'-2').attr("src", "images/bola"+ballRow2rand2+".png");
+        $('#ballRow8'+i+'-3').attr("src", "images/bola"+ballRow2rand3+".png");
+        $('#ballRow8'+i+'-4').attr("src", "images/bola"+ballRow2rand4+".png");
+        $('#ballRow8'+i+'-5').attr("src", "images/bola"+ballRow2rand5+".png");
+        $('#ballRow8'+i+'-6').attr("src", "images/bola"+ballRow2rand6+".png");
+        $('#ballRow8'+i+'-7').attr("src", "images/bola"+ballRow2rand7+".png");
+        $('#ballRow8'+i+'-8').attr("src", "images/bola"+ballRow2rand8+".png");
+      }
+    });
+
+    
+    $("#btn-b4").click(function(){
+      var rand1 = Math.floor((Math.random() * 8) + 1);
+      var rand2 = Math.floor((Math.random() * 8) + 1);
+      var rand3 = Math.floor((Math.random() * 8) + 1);
+      var rand4 = Math.floor((Math.random() * 8) + 1);
+      $('#b4-1').attr("src", "images/bola"+rand1+".png");
+      $('#b4-2').attr("src", "images/bola"+rand2+".png");
+      $('#b4-3').attr("src", "images/bola"+rand3+".png");
+      $('#b4-4').attr("src", "images/bola"+rand4+".png");
+    });
+
+    $("#btn-b5").click(function(){
+      var rand1 = Math.floor((Math.random() * 8) + 1);
+      var rand2 = Math.floor((Math.random() * 8) + 1);
+      var rand3 = Math.floor((Math.random() * 8) + 1);
+      var rand4 = Math.floor((Math.random() * 8) + 1);
+      var rand5 = Math.floor((Math.random() * 8) + 1);
+      $('#b5-1').attr("src", "images/bola"+rand1+".png");
+      $('#b5-2').attr("src", "images/bola"+rand2+".png");
+      $('#b5-3').attr("src", "images/bola"+rand3+".png");
+      $('#b5-4').attr("src", "images/bola"+rand4+".png");
+      $('#b5-5').attr("src", "images/bola"+rand5+".png");
+    });
+
+    $("#btn-b6").click(function(){
+      var rand1 = Math.floor((Math.random() * 8) + 1);
+      var rand2 = Math.floor((Math.random() * 8) + 1);
+      var rand3 = Math.floor((Math.random() * 8) + 1);
+      var rand4 = Math.floor((Math.random() * 8) + 1);
+      var rand5 = Math.floor((Math.random() * 8) + 1);
+      var rand6 = Math.floor((Math.random() * 8) + 1);
+      $('#b6-1').attr("src", "images/bola"+rand1+".png");
+      $('#b6-2').attr("src", "images/bola"+rand2+".png");
+      $('#b6-3').attr("src", "images/bola"+rand3+".png");
+      $('#b6-4').attr("src", "images/bola"+rand4+".png");
+      $('#b6-5').attr("src", "images/bola"+rand5+".png");
+      $('#b6-6').attr("src", "images/bola"+rand6+".png");
+    });
+ 
+    $("#btn-b7").click(function(){
+      var rand1 = Math.floor((Math.random() * 8) + 1);
+      var rand2 = Math.floor((Math.random() * 8) + 1);
+      var rand3 = Math.floor((Math.random() * 8) + 1);
+      var rand4 = Math.floor((Math.random() * 8) + 1);
+      var rand5 = Math.floor((Math.random() * 8) + 1);
+      var rand6 = Math.floor((Math.random() * 8) + 1);
+      var rand7 = Math.floor((Math.random() * 8) + 1);
+      $('#b7-1').attr("src", "images/bola"+rand1+".png");
+      $('#b7-2').attr("src", "images/bola"+rand2+".png");
+      $('#b7-3').attr("src", "images/bola"+rand3+".png");
+      $('#b7-4').attr("src", "images/bola"+rand4+".png");
+      $('#b7-5').attr("src", "images/bola"+rand5+".png");
+      $('#b7-6').attr("src", "images/bola"+rand6+".png");
+      $('#b7-7').attr("src", "images/bola"+rand7+".png");
+    });   
+         
+    $("#btn-b8").click(function(){
+      var rand1 = Math.floor((Math.random() * 8) + 1);
+      var rand2 = Math.floor((Math.random() * 8) + 1);
+      var rand3 = Math.floor((Math.random() * 8) + 1);
+      var rand4 = Math.floor((Math.random() * 8) + 1);
+      var rand5 = Math.floor((Math.random() * 8) + 1);
+      var rand6 = Math.floor((Math.random() * 8) + 1);
+      var rand7 = Math.floor((Math.random() * 8) + 1);
+      var rand8 = Math.floor((Math.random() * 8) + 1);
+      $('#b8-1').attr("src", "images/bola"+rand1+".png");
+      $('#b8-2').attr("src", "images/bola"+rand2+".png");
+      $('#b8-3').attr("src", "images/bola"+rand3+".png");
+      $('#b8-4').attr("src", "images/bola"+rand4+".png");
+      $('#b8-5').attr("src", "images/bola"+rand5+".png");
+      $('#b8-6').attr("src", "images/bola"+rand6+".png");
+      $('#b8-7').attr("src", "images/bola"+rand7+".png");
+      $('#b8-8').attr("src", "images/bola"+rand8+".png");
+    });   
+
+    $("#4-ball").click(function(){
+        $("#panel-4-ball").show();
+        $("#panel-5-ball").hide();
+        $("#panel-6-ball").hide();
+        $("#panel-7-ball").hide();
+        $("#panel-8-ball").hide();
+
+        $('#4-ball').css('background-color','#FF7E22');
+        $('#5-ball').css('background-color','#DFDFDF');
+        $('#6-ball').css('background-color','#C9C8C8');
+        $('#7-ball').css('background-color','#DFDFDF');
+        $('#8-ball').css('background-color','#C9C8C8');
+
+        $('#4-ball').css('color','#FFFFFF');
+        $('#5-ball').css('color','#C25D5D');
+        $('#6-ball').css('color','#C25D5D');
+        $('#7-ball').css('color','#C25D5D');
+        $('#8-ball').css('color','#C25D5D');
+
+    });
+    $("#5-ball").click(function(){
+        $("#panel-4-ball").hide();
+        $("#panel-5-ball").show();
+        $("#panel-6-ball").hide();
+        $("#panel-7-ball").hide();
+        $("#panel-8-ball").hide();
+
+        $('#4-ball').css('background-color','#C9C8C8');
+        $('#5-ball').css('background-color','#FF7E22');
+        $('#6-ball').css('background-color','#C9C8C8');
+        $('#7-ball').css('background-color','#DFDFDF');
+        $('#8-ball').css('background-color','#C9C8C8');
+
+        $('#4-ball').css('color','#C25D5D');
+        $('#5-ball').css('color','#FFFFFF');
+        $('#6-ball').css('color','#C25D5D');
+        $('#7-ball').css('color','#C25D5D');
+        $('#8-ball').css('color','#C25D5D');
+    });
+    $("#6-ball").click(function(){
+        $("#panel-4-ball").hide();
+        $("#panel-5-ball").hide();
+        $("#panel-6-ball").show();
+        $("#panel-7-ball").hide();
+        $("#panel-8-ball").hide();
+
+        $('#4-ball').css('background-color','#C9C8C8');
+        $('#5-ball').css('background-color','#DFDFDF');
+        $('#6-ball').css('background-color','#FF7E22');
+        $('#7-ball').css('background-color','#DFDFDF');
+        $('#8-ball').css('background-color','#C9C8C8');
+
+        $('#4-ball').css('color','#C25D5D');
+        $('#5-ball').css('color','#C25D5D');
+        $('#6-ball').css('color','#FFFFFF');
+        $('#7-ball').css('color','#C25D5D');
+        $('#8-ball').css('color','#C25D5D');
+    });
+    $("#7-ball").click(function(){
+        $("#panel-4-ball").hide();
+        $("#panel-5-ball").hide();
+        $("#panel-6-ball").hide();
+        $("#panel-7-ball").show();
+        $("#panel-8-ball").hide();
+
+        $('#4-ball').css('background-color','#C9C8C8');
+        $('#5-ball').css('background-color','#DFDFDF');
+        $('#6-ball').css('background-color','#C9C8C8');
+        $('#7-ball').css('background-color','#FF7E22');
+        $('#8-ball').css('background-color','#C9C8C8');
+
+        $('#4-ball').css('color','#C25D5D');
+        $('#5-ball').css('color','#C25D5D');
+        $('#6-ball').css('color','#C25D5D');
+        $('#7-ball').css('color','#FFFFFF');
+        $('#8-ball').css('color','#C25D5D');
+    });
+    $("#8-ball").click(function(){
+        $("#panel-4-ball").hide();
+        $("#panel-5-ball").hide();
+        $("#panel-6-ball").hide();
+        $("#panel-7-ball").hide();
+        $("#panel-8-ball").show();
+
+        $('#4-ball').css('background-color','#C9C8C8');
+        $('#5-ball').css('background-color','#DFDFDF');
+        $('#6-ball').css('background-color','#C9C8C8');
+        $('#7-ball').css('background-color','#DFDFDF');
+        $('#8-ball').css('background-color','#FF7E22');
+
+        $('#4-ball').css('color','#C25D5D');
+        $('#5-ball').css('color','#C25D5D');
+        $('#6-ball').css('color','#C25D5D');
+        $('#7-ball').css('color','#C25D5D');
+        $('#8-ball').css('color','#FFFFFF');
+    });
+
+    $("#btn-show-4").click(function(){
+     var mainBallValue=  $("#select-main-ball4").val();
+      if(mainBallValue==1){
+        $("#ballRow41").show();
+        $("#ballRow42").hide();
+        $("#ballRow43").hide();
+        $("#ballRow44").hide();
+        $("#ballRow45").hide();
+        $("#ballRow46").hide();
+        $("#ballRow47").hide();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==2){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").hide();
+        $("#ballRow44").hide();
+        $("#ballRow45").hide();
+        $("#ballRow46").hide();
+        $("#ballRow47").hide();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==3){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").hide();
+        $("#ballRow45").hide();
+        $("#ballRow46").hide();
+        $("#ballRow47").hide();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==4){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").hide();
+        $("#ballRow46").hide();
+        $("#ballRow47").hide();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==5){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").show();
+        $("#ballRow46").hide();
+        $("#ballRow47").hide();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==6){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").show();
+        $("#ballRow46").show();
+        $("#ballRow47").hide();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==7){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").show();
+        $("#ballRow46").show();
+        $("#ballRow47").show();
+        $("#ballRow48").hide();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==8){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").show();
+        $("#ballRow46").show();
+        $("#ballRow47").show();
+        $("#ballRow48").show();
+        $("#ballRow49").hide();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==9){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").show();
+        $("#ballRow46").show();
+        $("#ballRow47").show();
+        $("#ballRow48").show();
+        $("#ballRow49").show();
+        $("#ballRow410").hide();
+      }else if(mainBallValue==10){
+        $("#ballRow41").show();
+        $("#ballRow42").show();
+        $("#ballRow43").show();
+        $("#ballRow44").show();
+        $("#ballRow45").show();
+        $("#ballRow46").show();
+        $("#ballRow47").show();
+        $("#ballRow48").show();
+        $("#ballRow49").show();
+        $("#ballRow410").show();
+      }
+    });
+
+    $("#btn-show-5").click(function(){
+     var mainBallValue=  $("#select-main-ball5").val();
+      if(mainBallValue==1){
+        $("#ballRow51").show();
+        $("#ballRow52").hide();
+        $("#ballRow53").hide();
+        $("#ballRow54").hide();
+        $("#ballRow55").hide();
+        $("#ballRow56").hide();
+        $("#ballRow57").hide();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==2){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").hide();
+        $("#ballRow54").hide();
+        $("#ballRow55").hide();
+        $("#ballRow56").hide();
+        $("#ballRow57").hide();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==3){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").hide();
+        $("#ballRow55").hide();
+        $("#ballRow56").hide();
+        $("#ballRow57").hide();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==4){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").hide();
+        $("#ballRow56").hide();
+        $("#ballRow57").hide();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==5){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").show();
+        $("#ballRow56").hide();
+        $("#ballRow57").hide();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==6){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").show();
+        $("#ballRow56").show();
+        $("#ballRow57").hide();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==7){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").show();
+        $("#ballRow56").show();
+        $("#ballRow57").show();
+        $("#ballRow58").hide();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==8){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").show();
+        $("#ballRow56").show();
+        $("#ballRow57").show();
+        $("#ballRow58").show();
+        $("#ballRow59").hide();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==9){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").show();
+        $("#ballRow56").show();
+        $("#ballRow57").show();
+        $("#ballRow58").show();
+        $("#ballRow59").show();
+        $("#ballRow510").hide();
+      }else if(mainBallValue==10){
+        $("#ballRow51").show();
+        $("#ballRow52").show();
+        $("#ballRow53").show();
+        $("#ballRow54").show();
+        $("#ballRow55").show();
+        $("#ballRow56").show();
+        $("#ballRow57").show();
+        $("#ballRow58").show();
+        $("#ballRow59").show();
+        $("#ballRow510").show();
+      }
+    });
+
+    $("#btn-show-6").click(function(){
+     var mainBallValue=  $("#select-main-ball6").val();
+      if(mainBallValue==1){
+        $("#ballRow61").show();
+        $("#ballRow62").hide();
+        $("#ballRow63").hide();
+        $("#ballRow64").hide();
+        $("#ballRow65").hide();
+        $("#ballRow66").hide();
+        $("#ballRow67").hide();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==2){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").hide();
+        $("#ballRow64").hide();
+        $("#ballRow65").hide();
+        $("#ballRow66").hide();
+        $("#ballRow67").hide();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==3){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").hide();
+        $("#ballRow65").hide();
+        $("#ballRow66").hide();
+        $("#ballRow67").hide();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==4){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").hide();
+        $("#ballRow66").hide();
+        $("#ballRow67").hide();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==5){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").show();
+        $("#ballRow66").hide();
+        $("#ballRow67").hide();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==6){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").show();
+        $("#ballRow66").show();
+        $("#ballRow67").hide();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==7){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").show();
+        $("#ballRow66").show();
+        $("#ballRow67").show();
+        $("#ballRow68").hide();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==8){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").show();
+        $("#ballRow66").show();
+        $("#ballRow67").show();
+        $("#ballRow68").show();
+        $("#ballRow69").hide();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==9){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").show();
+        $("#ballRow66").show();
+        $("#ballRow67").show();
+        $("#ballRow68").show();
+        $("#ballRow69").show();
+        $("#ballRow610").hide();
+      }else if(mainBallValue==10){
+        $("#ballRow61").show();
+        $("#ballRow62").show();
+        $("#ballRow63").show();
+        $("#ballRow64").show();
+        $("#ballRow65").show();
+        $("#ballRow66").show();
+        $("#ballRow67").show();
+        $("#ballRow68").show();
+        $("#ballRow69").show();
+        $("#ballRow610").show();
+      }
+    });
+
+    $("#btn-show-7").click(function(){
+     var mainBallValue=  $("#select-main-ball7").val();
+      if(mainBallValue==1){
+        $("#ballRow71").show();
+        $("#ballRow72").hide();
+        $("#ballRow73").hide();
+        $("#ballRow74").hide();
+        $("#ballRow75").hide();
+        $("#ballRow76").hide();
+        $("#ballRow77").hide();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==2){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").hide();
+        $("#ballRow74").hide();
+        $("#ballRow75").hide();
+        $("#ballRow76").hide();
+        $("#ballRow77").hide();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==3){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").hide();
+        $("#ballRow75").hide();
+        $("#ballRow76").hide();
+        $("#ballRow77").hide();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==4){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").hide();
+        $("#ballRow76").hide();
+        $("#ballRow77").hide();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==5){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").show();
+        $("#ballRow76").hide();
+        $("#ballRow77").hide();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==6){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").show();
+        $("#ballRow76").show();
+        $("#ballRow77").hide();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==7){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").show();
+        $("#ballRow76").show();
+        $("#ballRow77").show();
+        $("#ballRow78").hide();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==8){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").show();
+        $("#ballRow76").show();
+        $("#ballRow77").show();
+        $("#ballRow78").show();
+        $("#ballRow79").hide();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==9){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").show();
+        $("#ballRow76").show();
+        $("#ballRow77").show();
+        $("#ballRow78").show();
+        $("#ballRow79").show();
+        $("#ballRow710").hide();
+      }else if(mainBallValue==10){
+        $("#ballRow71").show();
+        $("#ballRow72").show();
+        $("#ballRow73").show();
+        $("#ballRow74").show();
+        $("#ballRow75").show();
+        $("#ballRow76").show();
+        $("#ballRow77").show();
+        $("#ballRow78").show();
+        $("#ballRow79").show();
+        $("#ballRow710").show();
+      }
+    });
+
+    $("#btn-show-8").click(function(){
+     var mainBallValue=  $("#select-main-ball8").val();
+      if(mainBallValue==1){
+        $("#ballRow81").show();
+        $("#ballRow82").hide();
+        $("#ballRow83").hide();
+        $("#ballRow84").hide();
+        $("#ballRow85").hide();
+        $("#ballRow86").hide();
+        $("#ballRow87").hide();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==2){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").hide();
+        $("#ballRow84").hide();
+        $("#ballRow85").hide();
+        $("#ballRow86").hide();
+        $("#ballRow87").hide();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==3){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").hide();
+        $("#ballRow85").hide();
+        $("#ballRow86").hide();
+        $("#ballRow87").hide();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==4){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").hide();
+        $("#ballRow86").hide();
+        $("#ballRow87").hide();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==5){
+        $("#ballRo81").show();
+        $("#ballRo82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").show();
+        $("#ballRow86").hide();
+        $("#ballRow87").hide();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow10").hide();
+      }else if(mainBallValue==6){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").show();
+        $("#ballRow86").show();
+        $("#ballRow87").hide();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==7){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").show();
+        $("#ballRow86").show();
+        $("#ballRow87").show();
+        $("#ballRow88").hide();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==8){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").show();
+        $("#ballRow86").show();
+        $("#ballRow87").show();
+        $("#ballRow88").show();
+        $("#ballRow89").hide();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==9){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").show();
+        $("#ballRow86").show();
+        $("#ballRow87").show();
+        $("#ballRow88").show();
+        $("#ballRow89").show();
+        $("#ballRow810").hide();
+      }else if(mainBallValue==10){
+        $("#ballRow81").show();
+        $("#ballRow82").show();
+        $("#ballRow83").show();
+        $("#ballRow84").show();
+        $("#ballRow85").show();
+        $("#ballRow86").show();
+        $("#ballRow87").show();
+        $("#ballRow88").show();
+        $("#ballRow89").show();
+        $("#ballRow810").show();
+      }
+    });
+    
+    var isnavshow="hide";
+
+    $("#navbtn").click(function(){
+      if(isnavshow=="hide"){
+        $("#navsidebar").show();
+        isnavshow="show";
+      }else{
+        $("#navsidebar").hide();
+        isnavshow="hide";
+      }
+    })
+  });
+  </script>
+</head>
+<body class="mrg">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar navbar-expand-md text-right navbar-dark fixed-top linierbox-8">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="POD-OF-CAST-8" data-name="POD OF CAST" alt="POD OF CAST" class="POD-OF-CAST-8" /></a>
+          <img id="bola-8" data-name="bola" alt="bola" class="bola-8" />
+          <div class="bottom-left-gigi"></div>
+          <div class="bottom-right-gigi"></div>
+          <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <form class="d-flex">
+                  <ul class="navbar-nav me-auto mb-9 mb-md-9">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link count-indicator" id="notificationDropdown">
+                         Home
+                      </a>
+                    </li>
+                      <li class="nav-item">
+                        <a href="livedraw.html" class="nav-link count-indicator" id="notificationDropdown">
+                           Live
+                        </a>
+                      </li>
+                        <li class="nav-item">
+                          <a href="drawresult.html" class="nav-link count-indicator" id="notificationDropdown">
+                             Draw
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="generatenumber.html" class="nav-link count-indicator" id="notificationDropdown">
+                             Generate
+                             <div class="generate-decoration-text"></div>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+                            <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="10" height="10">  Bahasa
+                            <span class="count"></span>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Languange</p>
+                            <a class="dropdown-item preview-item">
+                              <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                  <img style="border-radius: 50%;" src="images/flag-eng.png" alt="flag-ind-1-8" width="30" height="30">
+                                </div>
+                              </div>
+                              <div class="preview-item-content">
+                                 English
+                              </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                              <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                  <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="30" height="30">
+                                </div>
+                              </div>
+                              <div class="preview-item-content">
+                                 Indonesia
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="nav-item" style="background-color: #201a1f54;">
+                          <a href="" style="text-decoration: none;">
+                          <div class="row text-center">
+                            <div class="col-2" style="background-color: #FF7E22;border-radius:5px;padding: 5px;margin-left: 10px;">
+                                <img src="images/phone.png" width="20" height="20" alt="">
+                            </div>
+                            <div class="col">
+                              <span style="color:white;font-size:12px;"><strong>Call Us +834973246974</strong> </span> 
+                            </div>
+                          </div>
+                        </a>
+                        </li>          
+                    </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+    </nav>
+    <div  class="navsidebar" id="navsidebar">
+      <ul class="navbar-nav me-auto mb-9 mb-md-9">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link count-indicator" id="notificationDropdown">
+             Home
+          </a>
+        </li>
+          <li class="nav-item">
+            <a href="livedraw.html" class="nav-link count-indicator" id="notificationDropdown">
+               Live
+            </a>
+          </li>
+            <li class="nav-item">
+              <a href="drawresult.html" class="nav-link count-indicator" id="notificationDropdown">
+                 Draw
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="generatenumber.html" class="nav-link count-indicator" id="notificationDropdown">
+                 Generate
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+                <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="10" height="10">  Bahasa
+                <span class="count"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Languange</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <img style="border-radius: 50%;" src="images/flag-eng.png" alt="flag-ind-1-8" width="30" height="30">
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                     English
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="30" height="30">
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                     Indonesia
+                  </div>
+                </a>
+              </div>
+            </li>         
+        </ul>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper" style="display: none;">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" style="display: none;">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Form elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel" style="width: 100%;">
+        <div class="content-wrapper" style="padding-bottom: 0px;">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <ui>
+                      <il>
+                       <a href="#" style="color: rgb(255, 159, 14);text-decoration: none;"><img src="images/_240_F_126611337_m8kcRtS5G7AhrFpOQ0Wufx4PgL6J4yxg_1.png" width="15" height="15"><b> account</b> </a> 
+                      </il>
+                      <il>
+                        <a href="#" style="color: rgb(255, 159, 14);text-decoration: none;"><img src="images/_240_F_262255017_1bQJwtoqSj9KuFg1UyeaQhcXMZIS1M5t_1.png" width="15" height="15"><b> Log out</b> </a> 
+                      </il>
+                    </ui>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="cotainer" style="padding-bottom: 50px;">
+          <div class="row">
+              <div class="col text-center">
+                  <h1 style="color: #FF7E22;"><b>Generate Number</b> </h1>
+              </div>
+          </div>
+          <div class="row" style="color: white;">
+            <div class="col text-center">
+             <b>Can't Find Your Favorite Number?</b>
+            </div>
+        </div>
+        <div class="row" style="color: white;">
+          <div class="col text-center">
+            <h6>
+              Here you can randomly generate 6 groups of lucky numbers for you to choose from!
+                        Click the "Generate Number" button, and then view the specific number generated.</h6>
+          </div>
+      </div>
+        </div>
+        <div id="result-draw-home" class="result-draw-home">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm">
+                <div class="container">
+              </div>
+              <hr>
+              <div class="container">
+                 <div class="row" style="margin-left: 1px;">
+                    
+                    <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball" id="4-ball" type="button" style="background-color: #FF7E22;color: white;"><b> 4 Ball</b></button></div>
+
+                    <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball-2" id="5-ball" type="button"><b>5 Ball</b> </button></div>
+                    
+                    <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball" id="6-ball" type="button"><b>6 Ball</b> </button></div>
+                    
+                    <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball-2" id="7-ball" type="button"><b>7 Ball</b> </button></div>
+                    
+                    <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball" id="8-ball" type="button"><b>8 Ball</b> </button></div>      
+                 </div>
+                 <div class="row">
+                      <div id="panel-4-ball" class="container" style="margin-top: 20px;">
+                          <div class="row ball-group" style="background-color: black; border-radius: 20px;">
+                             <div class="col" style="height:1px;">
+                               <div class="row" style="margin: 20px;">
+                                 <div class="col">
+                                  <img style="border-radius: 50%;" id="b4-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="b4-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="b4-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                 <img style="border-radius: 50%;" id="b4-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                 </div>
+                               </div>
+                               <div class="row" style="margin: 20px;">
+                                 <div class="col"> 
+                                  <buttonc class="mouthfilter" id="btn-b4" type="button">Generate
+                                 </buttonc></div>
+                              </div> 
+                              <div class="container text-center banner-lottery-ball-8" style="height: 200px;padding: 100px;">
+                                <div style="background-color: #D4D7D1; border-radius: 10px;height: 80px; width: 400px;padding: 20px;">
+                                     <h1 style="color: rgb(224, 108, 58);">Lotter. <span style="color: rgb(0, 88, 0);">y</span></h1>
+                                     <img src="images/bola8l_1.png" alt="bola8-foto" style="margin-left:300px" width="150" height="150">
+                                </div>
+                         </div>    
+                             </div>
+                             <div class="col" style="padding:10px">
+                                <div class="row" id="main-random-ball">
+                                  <div class="col">
+                                    <span style="color: white;" class="sp-hd"><b>More Results :</b> </span>
+                                    <select class="filter-ball-sum" id="select-main-ball4">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    <span style="color: white;" class="sp-hd"><b> Group Number :</b> </span>
+                                    <button id="btn-show-4" class="btn-ball-sum" type="button" style="margin-top: 10px;margin-bottom:10px;">Show</button>
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow41">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow41-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow41-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow41-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow41-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow42" style="display: none;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow42-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow42-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow42-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow42-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow43" style="display:none ;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow43-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow43-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow43-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow43-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow44" style="display:none ;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow44-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow44-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow44-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow44-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow45" style="display: none;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow45-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow45-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow45-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow45-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow46" style="display: none;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow46-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow46-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow46-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow46-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow47" style="display:none ;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow47-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow47-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow47-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow47-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow48" style="display:none ;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow48-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow48-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow48-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow48-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow49" style="display:none ;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow49-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow49-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow49-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow49-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                                <div class="row" id="ballRow410" style="display:none ;">
+                                  <div class="col">
+                                    <img style="border-radius: 50%;" id="ballRow410-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow410-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow410-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                    <img style="border-radius: 50%;" id="ballRow410-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  </div>
+                                </div>
+                             </div>
+                          </div>
+                      </div>
+      
+                      <div id="panel-5-ball" class="container" style="margin-top: 20px;display: none;">
+                        <div class="row ball-group" style="background-color: black; border-radius: 20px;">
+                           <div class="col" style="height:1px;">
+                             <div class="row" style="margin: 20px;">
+                               <div class="col">
+                                <img style="border-radius: 50%;" id="b5-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="b5-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="b5-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                               <img style="border-radius: 50%;" id="b5-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                               <img style="border-radius: 50%;" id="b5-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                               </div>
+                             </div>
+                             <div class="row" style="margin: 20px;">
+                               <div class="col"> 
+                                <buttonc class="mouthfilter" id="btn-b5" type="button">Generate
+                               </buttonc></div>
+                            </div> 
+                            <div class="container text-center banner-lottery-ball-8" style="height: 200px;padding: 100px;">
+                              <div style="background-color: #D4D7D1; border-radius: 10px;height: 80px; width: 400px;padding: 20px;">
+                                   <h1 style="color: rgb(224, 108, 58);">Lotter. <span style="color: rgb(0, 88, 0);">y</span></h1>
+                                   <img src="images/bola8l_1.png" alt="bola8-foto" style="margin-left:300px" width="150" height="150">
+                              </div>
+                       </div>    
+                           </div>
+                           <div class="col" style="padding:10px">
+                              <div class="row" id="main-random-ball">
+                                <div class="col">
+                                  <span style="color: white;" class="sp-hd"><b>More Results :</b> </span>
+                                  <select class="filter-ball-sum" id="select-main-ball5">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                  </select>
+                                  <span style="color: white;" class="sp-hd"><b> Nomor Grop :</b> </span>
+                                  <button id="btn-show-5" class="btn-ball-sum" type="button" style="margin-top: 10px;margin-bottom:10px;">Show</button>
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow51">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow51-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow51-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow51-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow51-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow51-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow52" style="display: none;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow52-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow52-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow52-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow52-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow52-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow53" style="display:none ;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow53-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow53-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow53-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow53-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow53-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow54" style="display:none ;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow54-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow54-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow54-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow54-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow54-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">    
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow55" style="display: none;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow55-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow55-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow55-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow55-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow55-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow56" style="display: none;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow56-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow56-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow56-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow56-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow56-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow57" style="display:none ;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow57-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow57-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow57-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow57-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow57-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow58" style="display:none ;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow58-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow58-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow58-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow58-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow58-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow59" style="display:none ;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow59-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow59-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow59-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow59-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow59-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                </div>
+                              </div>
+                              <div class="row" id="ballRow510" 0="" style="display:none ;">
+                                <div class="col">
+                                  <img style="border-radius: 50%;" id="ballRow510-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow510-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow510-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="ballRow510-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                  <img style="border-radius: 50%;" id="ballRow510-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">    
+                                </div>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+      
+                    <div id="panel-6-ball" class="container" style="margin-top: 20px;display: none;">
+                      <div class="row ball-group" style="background-color: black; border-radius: 20px;">
+                         <div class="col" style="height:1px;">
+                           <div class="row" style="margin: 20px;">
+                             <div class="col">
+                              <img style="border-radius: 50%;" id="b6-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="b6-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="b6-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                             <img style="border-radius: 50%;" id="b6-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                             <img style="border-radius: 50%;" id="b6-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                             <img style="border-radius: 50%;" id="b6-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                             </div>
+                           </div>
+                           <div class="row" style="margin: 20px;">
+                             <div class="col"> 
+                              <buttonc class="mouthfilter" id="btn-b6" type="button">Generate
+                             </buttonc></div>
+                          </div> 
+                          <div class="container text-center banner-lottery-ball-8" style="height: 200px;padding: 100px;">
+                            <div style="background-color: #D4D7D1; border-radius: 10px;height: 80px; width: 400px;padding: 20px;">
+                                 <h1 style="color: rgb(224, 108, 58);">Lotter. <span style="color: rgb(0, 88, 0);">y</span></h1>
+                                 <img src="images/bola8l_1.png" alt="bola8-foto" style="margin-left:300px" width="150" height="150">
+                            </div>
+                     </div>    
+                         </div>
+                         <div class="col" style="padding:10px">
+                            <div class="row" id="main-random-ball">
+                              <div class="col">
+                                <span style="color: white;" class="sp-hd"><b>More Results :</b> </span>
+                                <select class="filter-ball-sum" id="select-main-ball6">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <span style="color: white;" class="sp-hd"><b> Nomor Grop :</b> </span>
+                                <button id="btn-show-6" class="btn-ball-sum" type="button" style="margin-top: 10px;margin-bottom:10px;">Show</button>
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow61">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow61-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow61-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow61-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow61-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow61-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow61-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow62" style="display: none;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow62-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow62-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow62-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow62-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow62-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow62-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow63" style="display:none ;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow63-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow63-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow63-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow63-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow63-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow63-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow64" style="display:none ;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow64-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow64-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow64-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow64-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow64-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow64-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow65" style="display: none;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow65-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow65-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow65-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow65-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow65-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow65-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow66" style="display: none;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow66-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow66-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow66-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow66-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow66-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow66-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow67" style="display:none ;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow67-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow67-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow67-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow67-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow67-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow67-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow68" style="display:none ;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow68-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow68-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow68-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow68-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow68-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow68-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow69" style="display:none ;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow69-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow69-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow69-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow69-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow69-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow69-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">  
+                              </div>
+                            </div>
+                            <div class="row" id="ballRow610" 0="" style="display:none ;">
+                              <div class="col">
+                                <img style="border-radius: 50%;" id="ballRow610-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow610-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow610-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow610-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                                <img style="border-radius: 50%;" id="ballRow610-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                                <img style="border-radius: 50%;" id="ballRow610-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              </div>
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+      
+                  <div id="panel-7-ball" class="container" style="margin-top: 20px;display: none;">
+                    <div class="row ball-group" style="background-color: black; border-radius: 20px;">
+                       <div class="col" style="height:1px;">
+                         <div class="row" style="margin: 20px;">
+                           <div class="col">
+                            <img style="border-radius: 50%;" id="b7-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="b7-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="b7-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                           <img style="border-radius: 50%;" id="b7-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                           <img style="border-radius: 50%;" id="b7-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                           <img style="border-radius: 50%;" id="b7-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                           <img style="border-radius: 50%;" id="b7-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                           </div>
+                         </div>
+                         <div class="row" style="margin: 20px;">
+                           <div class="col"> 
+                            <buttonc class="mouthfilter" id="btn-b7" type="button">Generate
+                           </buttonc></div>
+                        </div> 
+                        <div class="container text-center banner-lottery-ball-8" style="height: 200px;padding: 100px;">
+                          <div style="background-color: #D4D7D1; border-radius: 10px;height: 80px; width: 400px;padding: 20px;">
+                               <h1 style="color: rgb(224, 108, 58);">Lotter. <span style="color: rgb(0, 88, 0);">y</span></h1>
+                               <img src="images/bola8l_1.png" alt="bola8-foto" style="margin-left:300px" width="150" height="150">
+                          </div>
+                   </div>    
+                       </div>
+                       <div class="col" style="padding:10px">
+                          <div class="row" id="main-random-ball">
+                            <div class="col">
+                              <span style="color: white;" class="sp-hd"><b>More Results :</b> </span>
+                              <select class="filter-ball-sum" id="select-main-ball7">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                              </select>
+                              <span style="color: white;" class="sp-hd"><b> Nomor Grop :</b> </span>
+                              <button id="btn-show-7" class="btn-ball-sum" type="button" style="margin-top: 10px;margin-bottom:10px;">Show</button>
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow71">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow71-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow71-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow71-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow71-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow71-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow71-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow71-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow72" style="display: none;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow72-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow72-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow72-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow72-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow72-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow72-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow72-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow73" style="display:none ;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow73-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow73-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow73-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow73-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow73-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow73-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow73-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow74" style="display:none ;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow74-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow74-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow74-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow74-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow74-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow74-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow74-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow75" style="display: none;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow75-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow75-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow75-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow75-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow75-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow75-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow75-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">    
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow76" style="display: none;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow76-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow76-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow76-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow76-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow76-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow76-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow76-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">    
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow77" style="display:none ;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow77-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow77-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow77-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow77-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow77-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow77-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow77-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">    
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow78" style="display:none ;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow78-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow78-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow78-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow78-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow78-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow78-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow78-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow79" style="display:none ;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow79-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow79-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow79-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow79-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow79-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow79-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow79-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                          <div class="row" id="ballRow710" style="display:none ;">
+                            <div class="col">
+                              <img style="border-radius: 50%;" id="ballRow710-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow710-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow710-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow710-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow710-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                              <img style="border-radius: 50%;" id="ballRow710-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                              <img style="border-radius: 50%;" id="ballRow710-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            </div>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+      
+                <div id="panel-8-ball" class="container" style="margin-top: 20px;display: none;">
+                  <div class="row ball-group" style="background-color: black; border-radius: 20px;">
+                     <div class="col" style="height:1px;">
+                       <div class="row" style="margin: 20px;">
+                         <div class="col">
+                          <img style="border-radius: 50%;" id="b8-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                          <img style="border-radius: 50%;" id="b8-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                          <img style="border-radius: 50%;" id="b8-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                         <img style="border-radius: 50%;" id="b8-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                         <img style="border-radius: 50%;" id="b8-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                         <img style="border-radius: 50%;" id="b8-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                         <img style="border-radius: 50%;" id="b8-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                         <img style="border-radius: 50%;" id="b8-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                         </div>
+                       </div>
+                       <div class="row" style="margin: 20px;">
+                         <div class="col"> 
+                          <buttonc class="mouthfilter" id="btn-b8" type="button">Generate
+                         </buttonc></div>
+                      </div> 
+                      <div class="container text-center banner-lottery-ball-8" style="height: 200px;padding: 100px;">
+                        <div style="background-color: #D4D7D1; border-radius: 10px;height: 80px; width: 400px;padding: 20px;">
+                             <h1 style="color: rgb(224, 108, 58);">Lotter. <span style="color: rgb(0, 88, 0);">y</span></h1>
+                             <img src="images/bola8l_1.png" alt="bola8-foto" style="margin-left:300px" width="150" height="150">
+                        </div>
+                 </div>    
+                     </div>
+                     <div class="col" style="padding:10px">
+                        <div class="row" id="main-random-ball">
+                          <div class="col">
+                            <span style="color: white;" class="sp-hd"><b>More Results :</b> </span>
+                            <select class="filter-ball-sum" id="select-main-ball8">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <span style="color: white;" class="sp-hd"><b> Nomor Grop :</b> </span>
+                            <button id="btn-show-8" class="btn-ball-sum" type="button" style="margin-top: 10px;margin-bottom:10px;">Show</button>
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow81">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow81-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow81-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow81-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow81-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow81-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow81-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow81-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow81-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow82" style="display: none;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow82-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow82-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow82-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow82-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow82-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow82-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow82-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow82-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow83" style="display:none ;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow83-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow83-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow83-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow83-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow83-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow83-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow83-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow83-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow84" style="display:none ;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow84-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow84-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow84-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow84-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow84-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow84-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow84-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow84-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow85" style="display: none;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow85-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow85-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow85-3" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow85-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow85-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow85-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow85-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow85-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow86" style="display: none;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow86-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow86-2" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow86-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow86-4" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow86-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow86-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow86-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow86-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow87" style="display:none ;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow87-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow87-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow87-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow87-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow87-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow87-6" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow87-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow87-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow88" style="display:none ;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow88-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow88-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow88-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow88-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow88-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow88-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow88-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow88-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow89" style="display:none ;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow89-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow89-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow89-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow89-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow89-5" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow89-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow89-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow89-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                        <div class="row" id="ballRow810" style="display:none ;">
+                          <div class="col">
+                            <img style="border-radius: 50%;" id="ballRow810-1" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow810-2" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow810-3" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow810-4" src="images/bola7l_1.png" alt="flag-ind-1-8" class="im-ball-q">
+                            <img style="border-radius: 50%;" id="ballRow810-5" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow810-6" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow810-7" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                            <img style="border-radius: 50%;" id="ballRow810-8" src="images/bola2l_1.png" alt="flag-ind-1-8" class="im-ball-q">   
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+                 </div>
+                </div>  
+              </div>
+          </div>
+          </div>
+      
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between text-center" style="background-color:rgb(95 22 132);padding:20px;">
+            <div class="up-left-gigi-gn"></div>
+            <div class="up-right-gigi-gn"></div>
+            <div class="up-right-gigi-help-gn"></div>
+            <span class="text-muted"></span>
+            <span class="text-center clcopy">
+              <a href="aboutus.html" class="bottom-nav"  style="text-decoration: none;">About Us</a>
+              <a href="contactus.html" class="bottom-nav"  style="text-decoration: none;">Contact Us</a>
+              <a href="resposibleplay.html" class="bottom-nav"  style="text-decoration: none;">Responsible play</a>   
+            </span>
+            <span class="float-none float-sm-right mt-1 mt-sm-0 text-center"></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between text-center" style="background-color:rgb(14, 9, 3);padding:20px;">
+            <span class="text-center clcopy">2022 Lottery. All Rights Reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><img src="images/cart_img.png" alt="" class="paymentcard-sx"></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById('hour-time').innerHTML =hours;
+      document.getElementById('minute-time').innerHTML =minutes;
+       document.getElementById('second-time').innerHTML =seconds;
+
+      // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      // + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+</body>
+
+</html>
+

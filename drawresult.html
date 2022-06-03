@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lottery</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,700,800">
+
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    body {
+      height: 100%;
+      padding-top: 3.0rem;
+      font-family:Montserrat Alternates;
+      background-color: black;
+      background-image: url('images/phil-derbyshire-casino-paradise-06091401-2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+</style>
+
+<script>
+  $(document).ready(function(){
+  
+    $("#mr").click(function(){
+      $("#tbl-mr").show();
+      $("#tbl-fr").hide();
+      $("#tbl-rbd").hide();
+  
+      $("#title-mr").show();
+      $("#title-fr").hide();
+      $("#title-rbd").hide();
+  
+      $("#choose-mr").show();
+      $("#choose-fr").hide();
+      $("#choose-rbd").hide();
+      
+      $("#choosemouth").show();
+      $("#choosedate").hide();
+      $("#chooseday").hide();
+  
+      $("#tbl-read-result").hide();
+      $('#mr').css('background-color','#FF7E22');
+      $('#mr').css('color','#FFFFFF');
+      // $('#mr').css('width','100px');
+      // $('#mr').css('height','30px');
+      $('#fr').css('background-color','#C9C8C8');
+      $('#fr').css('color','#C25D5D');
+      $('#rbd').css('background-color','#DFDFDF');
+      $('#rbd').css('color','#C25D5D');
+    });
+    $("#fr").click(function(){
+      $("#tbl-mr").hide();
+      $("#tbl-fr").show();
+      $("#tbl-rbd").hide();
+  
+      $("#title-mr").hide();
+      $("#title-fr").show();
+      $("#title-rbd").hide();
+  
+      $("#choose-mr").hide();
+      $("#choose-fr").show();
+      $("#choose-rbd").hide();
+          
+      $("#choosemouth").hide();
+      $("#choosedate").show();
+      $("#chooseday").hide();
+  
+      $("#tbl-read-result").hide();
+      $('#mr').css('background-color','#DFDFDF');
+      $('#mr').css('color','#C25D5D');
+      $('#fr').css('background-color','#FF7E22');
+      $('#fr').css('color','#FFFFFF');
+      // $('#fr').css('width','100px');
+      // $('#fr').css('height','30px');
+      $('#rbd').css('background-color','#DFDFDF');
+      $('#rbd').css('color','#C25D5D');
+    });
+    $("#rbd").click(function(){
+      $("#tbl-mr").hide();
+      $("#tbl-fr").hide();
+      $("#tbl-rbd").show();
+  
+      $("#title-mr").hide();
+      $("#title-fr").hide();
+      $("#title-rbd").show();
+      
+      $("#choose-mr").hide();
+      $("#choose-fr").hide();
+      $("#choose-rbd").show();
+          
+      $("#choosemouth").hide();
+      $("#choosedate").hide();
+      $("#chooseday").show();
+  
+      $("#tbl-read-result").hide();
+      $('#mr').css('background-color','#DFDFDF');
+      $('#mr').css('color','#C25D5D');
+      $('#fr').css('background-color','#C9C8C8');
+      $('#fr').css('color','#C25D5D');
+      $('#rbd').css('background-color','#FF7E22');
+      $('#rbd').css('color','#FFFFFF');
+      // $('#rbd').css('width','100px');
+      // $('#rbd').css('height','30px');
+    });
+  
+    $("#btn-fr-1").click(function(){
+      $("#tbl-mr").hide();
+      $("#tbl-fr").hide();
+      $("#tbl-rbd").hide();
+  
+      $("#title-mr").hide();
+      $("#title-fr").show();
+      $("#title-rbd").hide();
+  
+      $("#choose-mr").hide();
+      $("#choose-fr").show();
+      $("#choose-rbd").hide();
+          
+      $("#choosemouth").hide();
+      $("#choosedate").show();
+      $("#chooseday").hide();
+  
+      $("#tbl-read-result").show();
+  
+    });
+  
+    $("#btn-rbd-1").click(function(){
+      $("#tbl-mr").hide();
+      $("#tbl-fr").hide();
+      $("#tbl-rbd").hide();
+  
+      $("#title-mr").hide();
+      $("#title-fr").hide();
+      $("#title-rbd").show();
+      
+      $("#choose-mr").hide();
+      $("#choose-fr").hide();
+      $("#choose-rbd").show();
+          
+      $("#choosemouth").hide();
+      $("#choosedate").hide();
+      $("#chooseday").show();
+  
+      $("#tbl-read-result").show();
+  
+    });
+    var isnavshow="hide";
+
+$("#navbtn").click(function(){
+  if(isnavshow=="hide"){
+    $("#navsidebar").show();
+    isnavshow="show";
+  }else{
+    $("#navsidebar").hide();
+    isnavshow="hide";
+  }
+});
+  });
+  </script>
+</head>
+<body class="mrg">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar navbar-expand-md text-right navbar-dark fixed-top linierbox-8">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="POD-OF-CAST-8" data-name="POD OF CAST" alt="POD OF CAST" class="POD-OF-CAST-8" /></a>
+          <img id="bola-8" data-name="bola" alt="bola" class="bola-8" />
+          <div class="bottom-left-gigi"></div>
+          <div class="bottom-right-gigi"></div>
+          <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <form class="d-flex">
+                  <ul class="navbar-nav me-auto mb-9 mb-md-9">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link count-indicator" id="notificationDropdown">
+                         Home
+                      </a>
+                    </li>
+                      <li class="nav-item">
+                        <a href="livedraw.html" class="nav-link count-indicator" id="notificationDropdown">
+                           Live
+                         
+
+                        </a>
+                      </li>
+                        <li class="nav-item">
+                          <a href="drawresult.html" class="nav-link count-indicator" id="notificationDropdown">
+                             Draw
+                             <div class="draw-decoration-text"></div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="generatenumber.html" class="nav-link count-indicator" id="notificationDropdown">
+                             Generate
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+                            <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="10" height="10">  Bahasa
+                            <span class="count"></span>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Languange</p>
+                            <a class="dropdown-item preview-item">
+                              <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                  <img style="border-radius: 50%;" src="images/flag-eng.png" alt="flag-ind-1-8" width="30" height="30">
+                                </div>
+                              </div>
+                              <div class="preview-item-content">
+                                 English
+                              </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                              <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                  <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="30" height="30">
+                                </div>
+                              </div>
+                              <div class="preview-item-content">
+                                 Indonesia
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="nav-item" style="background-color: #201a1f54;">
+                          <a href="" style="text-decoration: none;">
+                          <div class="row text-center">
+                            <div class="col-2" style="background-color: #FF7E22;border-radius:5px;padding: 5px;margin-left: 10px;">
+                                <img src="images/phone.png" width="20" height="20" alt="">
+                            </div>
+                            <div class="col">
+                              <span style="color:white;font-size:12px;"><strong>Call Us +834973246974</strong> </span> 
+                            </div>
+                          </div>
+                        </a>
+                        </li>          
+                    </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+    </nav>
+    <div  class="navsidebar" id="navsidebar">
+      <ul class="navbar-nav me-auto mb-9 mb-md-9">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link count-indicator" id="notificationDropdown">
+             Home
+          </a>
+        </li>
+          <li class="nav-item">
+            <a href="livedraw.html" class="nav-link count-indicator" id="notificationDropdown">
+               Live
+            </a>
+          </li>
+            <li class="nav-item">
+              <a href="drawresult.html" class="nav-link count-indicator" id="notificationDropdown">
+                 Draw
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="generatenumber.html" class="nav-link count-indicator" id="notificationDropdown">
+                 Generate
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+                <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="10" height="10">  Bahasa
+                <span class="count"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Languange</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <img style="border-radius: 50%;" src="images/flag-eng.png" alt="flag-ind-1-8" width="30" height="30">
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                     English
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="30" height="30">
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                     Indonesia
+                  </div>
+                </a>
+              </div>
+            </li>         
+        </ul>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper" style="display: none;">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" style="display: none;">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Form elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel" style="width: 100%;">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <ui>
+                      <il>
+                       <a href="#" style="color: rgb(255, 159, 14);text-decoration: none;"><img src="images/_240_F_126611337_m8kcRtS5G7AhrFpOQ0Wufx4PgL6J4yxg_1.png" width="15" height="15"><b> account</b> </a> 
+                      </il>
+                      <il>
+                        <a href="#" style="color: rgb(255, 159, 14);text-decoration: none;"><img src="images/_240_F_262255017_1bQJwtoqSj9KuFg1UyeaQhcXMZIS1M5t_1.png" width="15" height="15"><b> Log out</b> </a> 
+                      </il>
+                    </ui>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-bottom: 20px;">
+            <div class="container text-center">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="row">
+                          <div class="col-3 text-center dr-z">
+                              <span><b style="color:rgb(255, 159, 14);"> Draw History</b> </span>
+                          </div>
+                          <div class="col text-center  dr-z" style="color: white;">
+                              <span id="title-mr">Monthly Result </span>
+                              <span id="title-fr" style="display: none;">1st Result </span>
+                              <span id="title-rbd" style="display: none;">Result By Day </span>
+         
+                          </div>
+                          <div class="col text-center  dr-z" style="color: white;">
+      
+                            <span id="choose-mr">Choose Monthly : </span>
+                            <span id="choose-fr" style="display: none;">Choose Date : </span>
+                            <span id="choose-rbd" style="display: none;">Choose Day : </span>
+         
+                          </div>
+                          <div class="col-3 text-center  dr-z">
+                              <div class="col">
+                                <select class="mouthfilter" name="choosemouth" id="choosemouth">
+                                  <option value="January">January</option>
+                                  <option value="February">February</option>
+                                  <option value="Maret">Maret</option>
+                                  <option value="April">April</option>
+                                  <option value="May">May</option>
+                                  <option value="Juni">Juni</option>
+                                  <option value="July">July</option>
+                                  <option value="Agustus">Agustus</option>
+                                  <option value="September">September</option>
+                                  <option value="October">October</option>
+                                  <option value="November">November</option>
+                                  <option value="Desember">Desember</option>
+                                </select>
+                                <input type="date" name="" id="choosedate" style="display: none;" class="mouthfilter">
+                                <select name="chooseday" id="chooseday" style="display: none;" class="mouthfilter">
+                                  <option value="sunday">sunday</option>
+                                  <option value="monday">monday</option>
+                                  <option value="tuesday">tuesday</option>
+                                  <option value="Wednesday">Wednesday</option>
+                                  <option value="Thursday">Thursday</option>
+                                  <option value="friday">sunday</option>
+                                  <option value="saturday">saturday</option>
+                                </select>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div class="row">
+                <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball" id="mr" type="button"><b>Monthly Result</b> </button></div>
+                <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball-2" id="fr" type="button"><b>First Result</b> </button></div>
+                <div class="col" style="padding-left:0px;padding-right:0px;"><button class="btn-ball" id="rbd" type="button"><b>Result By Day</b> </button></div>
+                
+                
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="row text-center" style="padding-bottom: 0px;">
+            <div class="container">
+              <div class="row">
+                <div style="border:0px solid white;width:100%;height:500px;overflow-y:scroll;overflow-x:scroll;">
+                  <table id="tbl-mr" class="table table-dark table-striped" style="display: none;">
+                    <thead>
+                      <tr>
+                        <th colspan="1" scope="col">#</th>
+                        <th scope="col">1st - 3rd PRIZE</th>
+                        <th scope="col">LUCKY PRIZE</th>
+                        <th scope="col">CONSOLATION PRIZE</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Thursday, 14-04-2022</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>1St. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9012</td>
+                        <td>7634</td>
+                        <td>2390</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>2nd.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3456</td>
+                        <td>9876</td>
+                        <td>3434</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>3rd.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1212</td>
+                        <td>2356</td>
+                        <td>8905</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>2356</td>
+                        <td>8905</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>2356</td>
+                        <td>8905</td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Wednesday, 13-04-2022</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>1St. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9012</td>
+                        <td>7634</td>
+                        <td>2390</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>2nd.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3456</td>
+                        <td>9876</td>
+                        <td>3434</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>3rd.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1212</td>
+                        <td>2356</td>
+                        <td>8905</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>2356</td>
+                        <td>8905</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>2356</td>
+                        <td>8905</td>
+                      </tr>
+                    </tbody>
+                  </table>
+        
+                  <table id="tbl-fr" class="table table-dark table-striped" style="display: none;">
+                    <thead>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Thursday, 14-04-2022</td>
+                        <td>P-8745</td>
+                        <td>9078</td>
+                        <td><button id="btn-fr-1" class="mouthfilter">Read Me</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Wednesday, 13-04-2022</td>
+                        <td>P-8745</td>
+                        <td>9078</td>
+                        <td><button id="btn-fr=2" class="mouthfilter">Read Me</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Tuesday, 12-04-2022</td>
+                        <td>P-8745</td>
+                        <td>9078</td>
+                        <td><button class="mouthfilter">Read Me</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+        
+                  <table id="tbl-rbd" class="table table-dark table-striped" style="">
+                    <thead>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Thursday, 14-04-2022</td>
+                        <td>9078</td>
+                        <td><button id="btn-rbd-1" class="mouthfilter">Read Me</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Wednesday, 13-04-2022</td>
+                        <td>9078</td>
+                        <td><button class="mouthfilter">Read Me</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Tuesday, 12-04-2022</td>
+                        <td>9078</td>
+                        <td><button class="mouthfilter">Read Me</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+        
+                  <table id="tbl-read-result" class="table table-dark table-striped" style="display: none;">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center;font-size: 24px;">Winning Result</th>
+                      </tr>
+                      <tr>
+                        <th style="text-align: center;">Priode 1930 | Thursday, 14-04-2022</th>
+                      </tr>
+                    </thead>
+                    <tbody style="text-align: center;">
+                      <tr>
+                        <th>Prize 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8956</th>
+                      </tr>
+                      <tr>
+                        <th>Prize 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4523</th>
+                      </tr>
+                      <tr>
+                        <th>Prize 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2345</th>
+                      </tr>
+        
+                      <tr>
+                        <th>Lucky prize &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consolation</th>
+                      </tr>
+                      <tr>
+                        <th>2356 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2345</th>
+                      </tr>
+                      <tr>
+                        <th>2356 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2345</th>
+                      </tr>
+                      <tr>
+                        <th>2356 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2345</th>
+                      </tr>
+                      <tr>
+                        <th>2356 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2345</th>
+                      </tr>
+                    </tbody>
+                  </table>
+        
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between text-center" style="background-color:rgb(95 22 132);padding:20px;">
+            <div class="up-left-gigi-dr"></div>
+            <div class="up-right-gigi-dr"></div>
+            <div class="up-right-gigi-help-dr"></div>
+            <span class="text-muted"></span>
+            <span class="text-center clcopy">
+              <a href="aboutus.html" class="bottom-nav"  style="text-decoration: none;">About Us</a>
+              <a href="contactus.html" class="bottom-nav"  style="text-decoration: none;">Contact Us</a>
+              <a href="resposibleplay.html" class="bottom-nav"  style="text-decoration: none;">Responsible play</a>   
+            </span>
+            <span class="float-none float-sm-right mt-1 mt-sm-0 text-center"></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between text-center" style="background-color:rgb(14, 9, 3);padding:20px;">
+            <span class="text-center clcopy">2022 Lottery. All Rights Reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><img src="images/cart_img.png" alt="" class="paymentcard-sx"></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById('hour-time').innerHTML =hours;
+      document.getElementById('minute-time').innerHTML =minutes;
+       document.getElementById('second-time').innerHTML =seconds;
+
+      // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      // + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+</body>
+
+</html>
+

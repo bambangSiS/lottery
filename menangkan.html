@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lottery</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,700,800">
+
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <style>
+    body {
+      height: 100%;
+      padding-top: 0.5rem;
+      font-family:Montserrat Alternates;
+      background-color: black;
+      background-image: url('images/phil-derbyshire-casino-paradise-06091401-2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var isnavshow="hide";
+
+$("#navbtn").click(function(){
+  if(isnavshow=="hide"){
+    $("#navsidebar").show();
+    isnavshow="show";
+  }else{
+    $("#navsidebar").hide();
+    isnavshow="hide";
+  }
+})
+
+      var ind4 = 1;
+      var ind5 = 1;
+
+      $('#btn-b4-show').click(function(){
+        $('#alert-frame-query-4').show();
+      });
+
+      $('#btn-close-alert-query-4').click(function(){
+        $('#alert-frame-query-4').hide();
+      });
+
+      $('#btn-b5-show').click(function(){
+        $('#alert-frame-query-5').show();
+      });
+
+      $('#btn-close-alert-query-5').click(function(){
+        $('#alert-frame-query-5').hide();
+      });
+
+      
+
+      $('#btn-qr1-0').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola0.png");
+            $('#b4-1-query').attr("src", "images/bola0.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola0.png");
+            $('#b4-2-query').attr("src", "images/bola0.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola0.png");
+            $('#b4-3-query').attr("src", "images/bola0.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola0.png");
+            $('#b4-4-query').attr("src", "images/bola0.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-1').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola1.png");
+            $('#b4-1-query').attr("src", "images/bola1.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola1.png");
+            $('#b4-2-query').attr("src", "images/bola1.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola1.png");
+            $('#b4-3-query').attr("src", "images/bola1.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola1.png");
+            $('#b4-4-query').attr("src", "images/bola1.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-2').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola2.png");
+            $('#b4-1-query').attr("src", "images/bola2.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola2.png");
+            $('#b4-2-query').attr("src", "images/bola2.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola2.png");
+            $('#b4-3-query').attr("src", "images/bola2.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola2.png");
+            $('#b4-4-query').attr("src", "images/bola2.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-3').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola3.png");
+            $('#b4-1-query').attr("src", "images/bola3.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola3.png");
+            $('#b4-2-query').attr("src", "images/bola3.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola3.png");
+            $('#b4-3-query').attr("src", "images/bola3.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola3.png");
+            $('#b4-4-query').attr("src", "images/bola3.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-4').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola4.png");
+            $('#b4-1-query').attr("src", "images/bola4.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola4.png");
+            $('#b4-2-query').attr("src", "images/bola4.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola4.png");
+            $('#b4-3-query').attr("src", "images/bola4.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola4.png");
+            $('#b4-4-query').attr("src", "images/bola4.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-5').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola5.png");
+            $('#b4-1-query').attr("src", "images/bola5.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola5.png");
+            $('#b4-2-query').attr("src", "images/bola5.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola5.png");
+            $('#b4-3-query').attr("src", "images/bola5.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola5.png");
+            $('#b4-4-query').attr("src", "images/bola5.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-6').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola6.png");
+            $('#b4-1-query').attr("src", "images/bola6.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola6.png");
+            $('#b4-2-query').attr("src", "images/bola6.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola6.png");
+            $('#b4-3-query').attr("src", "images/bola6.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola6.png");
+            $('#b4-4-query').attr("src", "images/bola6.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-7').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola7.png");
+            $('#b4-1-query').attr("src", "images/bola7.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola7.png");
+            $('#b4-2-query').attr("src", "images/bola7.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola7.png");
+            $('#b4-3-query').attr("src", "images/bola7.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola7.png");
+            $('#b4-4-query').attr("src", "images/bola7.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-8').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola8.png");
+            $('#b4-1-query').attr("src", "images/bola8.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola8.png");
+            $('#b4-2-query').attr("src", "images/bola8.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola8.png");
+            $('#b4-3-query').attr("src", "images/bola8.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola8.png");
+            $('#b4-4-query').attr("src", "images/bola8.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-qr1-9').click(function(){
+          if(ind4==1){
+            $('#b4-1').attr("src", "images/bola9.png");
+            $('#b4-1-query').attr("src", "images/bola9.png");
+            ind4 = 2;
+          }else if(ind4==2){
+            $('#b4-2').attr("src", "images/bola9.png");
+            $('#b4-2-query').attr("src", "images/bola9.png");
+            ind4 = 3;
+          }else if(ind4==3){
+            $('#b4-3').attr("src", "images/bola9.png");
+            $('#b4-3-query').attr("src", "images/bola9.png");
+            ind4 = 4;
+          }else if(ind4==4){
+            $('#b4-4').attr("src", "images/bola9.png");
+            $('#b4-4-query').attr("src", "images/bola9.png");
+            ind4=0;
+          }
+      });
+
+      $('#btn-b4-ulang').click(function(){
+        $('#b4-1').attr("src", "images/bolaz.png");
+        $('#b4-2').attr("src", "images/bolaz.png");
+        $('#b4-3').attr("src", "images/bolaz.png");
+        $('#b4-4').attr("src", "images/bolaz.png");
+        ind4 =1;
+      });
+
+      $('#btn-b5-ulang').click(function(){
+        $('#b5-1').attr("src", "images/bolaz.png");
+        $('#b5-2').attr("src", "images/bolaz.png");
+        $('#b5-3').attr("src", "images/bolaz.png");
+        $('#b5-4').attr("src", "images/bolaz.png");
+        $('#b5-5').attr("src", "images/bolaz.png");
+        ind5=1;
+      });
+ 
+    $("#4-ball").click(function(){
+        $("#panel-4-ball").show();
+        $("#panel-5-ball").hide();
+        $("#panel-6-ball").hide();
+        $("#panel-7-ball").hide();
+        $("#panel-8-ball").hide();
+
+        $("#4-ball").css("background-color","#FF7E22");
+        $("#4-ball").css("color","white");
+        $("#5-ball").css("background-color","#DFDFDF");
+        $("#5-ball").css("color","#C25D5D");
+
+    });
+    $("#5-ball").click(function(){
+        $("#panel-4-ball").hide();
+        $("#panel-5-ball").show();
+        $("#panel-6-ball").hide();
+        $("#panel-7-ball").hide();
+        $("#panel-8-ball").hide();
+
+        $("#4-ball").css("background-color","#DFDFDF");
+        $("#4-ball").css("color","#C25D5D");
+        $("#5-ball").css("background-color","#FF7E22");
+        $("#5-ball").css("color","white");
+
+    });
+
+
+    $('#btn-qr5-0').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola0.png");
+            $('#b5-1-query').attr("src", "images/bola0.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola0.png");
+            $('#b5-2-query').attr("src", "images/bola0.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola0.png");
+            $('#b5-3-query').attr("src", "images/bola0.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola0.png");
+            $('#b5-4-query').attr("src", "images/bola0.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola0.png");
+            $('#b5-5-query').attr("src", "images/bola0.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-1').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola1.png");
+            $('#b5-1-query').attr("src", "images/bola1.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola1.png");
+            $('#b5-2-query').attr("src", "images/bola1.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola1.png");
+            $('#b5-3-query').attr("src", "images/bola1.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola1.png");
+            $('#b5-4-query').attr("src", "images/bola1.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola1.png");
+            $('#b5-5-query').attr("src", "images/bola1.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-2').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola2.png");
+            $('#b5-1-query').attr("src", "images/bola2.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola2.png");
+            $('#b5-2-query').attr("src", "images/bola2.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola2.png");
+            $('#b5-3-query').attr("src", "images/bola2.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola2.png");
+            $('#b5-4-query').attr("src", "images/bola2.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola2.png");
+            $('#b5-5-query').attr("src", "images/bola2.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-3').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola3.png");
+            $('#b5-1-query').attr("src", "images/bola3.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola3.png");
+            $('#b5-2-query').attr("src", "images/bola3.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola3.png");
+            $('#b5-3-query').attr("src", "images/bola3.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola3.png");
+            $('#b5-4-query').attr("src", "images/bola3.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola3.png");
+            $('#b5-5-query').attr("src", "images/bola3.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-4').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola4.png");
+            $('#b5-1-query').attr("src", "images/bola4.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola4.png");
+            $('#b5-2-query').attr("src", "images/bola4.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola4.png");
+            $('#b5-3-query').attr("src", "images/bola4.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola4.png");
+            $('#b5-4-query').attr("src", "images/bola4.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola4.png");
+            $('#b5-5-query').attr("src", "images/bola4.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-5').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola5.png");
+            $('#b5-1-query').attr("src", "images/bola5.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola5.png");
+            $('#b5-2-query').attr("src", "images/bola5.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola5.png");
+            $('#b5-3-query').attr("src", "images/bola5.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola5.png");
+            $('#b5-4-query').attr("src", "images/bola5.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola5.png");
+            $('#b5-5-query').attr("src", "images/bola5.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-6').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola6.png");
+            $('#b5-1-query').attr("src", "images/bola6.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola6.png");
+            $('#b5-2-query').attr("src", "images/bola6.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola6.png");
+            $('#b5-3-query').attr("src", "images/bola6.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola6.png");
+            $('#b5-4-query').attr("src", "images/bola6.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola6.png");
+            $('#b5-5-query').attr("src", "images/bola6.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-7').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola7.png");
+            $('#b5-1-query').attr("src", "images/bola7.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola7.png");
+            $('#b5-2-query').attr("src", "images/bola7.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola7.png");
+            $('#b5-3-query').attr("src", "images/bola7.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola7.png");
+            $('#b5-4-query').attr("src", "images/bola7.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola7.png");
+            $('#b5-5-query').attr("src", "images/bola7.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-8').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola8.png");
+            $('#b5-1-query').attr("src", "images/bola8.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola8.png");
+            $('#b5-2-query').attr("src", "images/bola8.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola8.png");
+            $('#b5-3-query').attr("src", "images/bola8.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola8.png");
+            $('#b5-4-query').attr("src", "images/bola8.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola8.png");
+            $('#b5-5-query').attr("src", "images/bola8.png");
+             ind5=0;
+          }
+      });
+
+      $('#btn-qr5-9').click(function(){
+          if(ind5==1){
+            $('#b5-1').attr("src", "images/bola9.png");
+            $('#b5-1-query').attr("src", "images/bola9.png");
+            ind5 = 2;
+          }else if(ind5==2){
+            $('#b5-2').attr("src", "images/bola9.png");
+            $('#b5-2-query').attr("src", "images/bola9.png");
+            ind5 = 3;
+          }else if(ind5==3){
+            $('#b5-3').attr("src", "images/bola9.png");
+            $('#b5-3-query').attr("src", "images/bola9.png");
+            ind5 = 4;
+          }else if(ind5==4){
+            $('#b5-4').attr("src", "images/bola9.png");
+            $('#b5-4-query').attr("src", "images/bola9.png");
+             ind5=5;
+          }else if(ind5==5){
+            $('#b5-5').attr("src", "images/bola9.png");
+            $('#b5-5-query').attr("src", "images/bola9.png");
+             ind5=0;
+          }
+      });
+
+  });
+  </script>
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar navbar-expand-md text-right navbar-dark fixed-top linierbox-8">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="POD-OF-CAST-8" data-name="POD OF CAST" alt="POD OF CAST" class="POD-OF-CAST-8" /></a>
+          <img id="bola-8" data-name="bola" alt="bola" class="bola-8" />
+          <div class="bottom-left-gigi"></div>
+          <div class="bottom-right-gigi"></div>
+          <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <form class="d-flex">
+                  <ul class="navbar-nav me-auto mb-9 mb-md-9">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link count-indicator" id="notificationDropdown">
+                         Home
+                      </a>
+                    </li>
+                      <li class="nav-item">
+                        <a href="livedraw.html" class="nav-link count-indicator" id="notificationDropdown">
+                           Live
+                        </a>
+                      </li>
+                        <li class="nav-item">
+                          <a href="drawresult.html" class="nav-link count-indicator" id="notificationDropdown">
+                             Draw
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="generatenumber.html" class="nav-link count-indicator" id="notificationDropdown">
+                             Generate
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+                            <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="10" height="10">  Bahasa
+                            <span class="count"></span>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Languange</p>
+                            <a class="dropdown-item preview-item">
+                              <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                  <img style="border-radius: 50%;" src="images/flag-eng.png" alt="flag-ind-1-8" width="30" height="30">
+                                </div>
+                              </div>
+                              <div class="preview-item-content">
+                                 English
+                              </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                              <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                  <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="30" height="30">
+                                </div>
+                              </div>
+                              <div class="preview-item-content">
+                                 Indonesia
+                              </div>
+                            </a>
+                          </div>
+                        </li>
+                        <li class="nav-item" style="background-color: #201a1f54;">
+                          <a href="" style="text-decoration: none;">
+                          <div class="row text-center">
+                            <div class="col-2" style="background-color: #FF7E22;border-radius:5px;padding: 5px;margin-left: 10px;">
+                                <img src="images/phone.png" width="20" height="20" alt="">
+                            </div>
+                            <div class="col">
+                              <span style="color:white;font-size:12px;"><strong>Call Us +834973246974</strong> </span> 
+                            </div>
+                          </div>
+                        </a>
+                        </li>          
+                    </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+    </nav>
+    <div  class="navsidebar" id="navsidebar">
+      <ul class="navbar-nav me-auto mb-9 mb-md-9">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link count-indicator" id="notificationDropdown">
+             Home
+          </a>
+        </li>
+          <li class="nav-item">
+            <a href="livedraw.html" class="nav-link count-indicator" id="notificationDropdown">
+               Live
+            </a>
+          </li>
+            <li class="nav-item">
+              <a href="drawresult.html" class="nav-link count-indicator" id="notificationDropdown">
+                 Draw
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="generatenumber.html" class="nav-link count-indicator" id="notificationDropdown">
+                 Generate
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+                <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="10" height="10">  Bahasa
+                <span class="count"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <p class="mb-0 font-weight-normal float-left dropdown-header">Languange</p>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <img style="border-radius: 50%;" src="images/flag-eng.png" alt="flag-ind-1-8" width="30" height="30">
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                     English
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <img style="border-radius: 50%;" src="images/flag_ind_1_8.png" alt="flag-ind-1-8" width="30" height="30">
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                     Indonesia
+                  </div>
+                </a>
+              </div>
+            </li>         
+        </ul>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper" style="display: none;">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" style="display: none;">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Form elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Charts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Tables</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel" style="width: 100%;">
+        <div class="content-wrapper" style="padding-bottom:0px;">
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <ui>
+                      <il>
+                       <a href="#" style="color: rgb(255, 159, 14);text-decoration: none;"><img src="images/_240_F_126611337_m8kcRtS5G7AhrFpOQ0Wufx4PgL6J4yxg_1.png" width="15" height="15"><b> account</b> </a> 
+                      </il>
+                      <il>
+                        <a href="#" style="color: rgb(255, 159, 14);text-decoration: none;"><img src="images/_240_F_262255017_1bQJwtoqSj9KuFg1UyeaQhcXMZIS1M5t_1.png" width="15" height="15"><b> Log out</b> </a> 
+                      </il>
+                    </ui>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="cotainer" style="padding-bottom: 50px;">
+          <div class="row">
+              <div class="col text-center">
+                  <h1 style="color: #FF7E22;"><b>Win Query</b> </h1>
+              </div>
+          </div>
+          <div class="row" style="color: white;">
+            <div class="col text-center">
+             <b>Want to know if your chosen number has won?</b>
+            </div>
+        </div>
+        <div class="row" style="color: white;padding-left: 100px;padding-right: 100px;">
+          <div class="col text-center">
+            <h6>
+              It will compare your numbers with the latest lottery results from Lotto Macau to determine if you have won the lottery . After selecting your number, click "View Results" and the winner finder will quickly determine the prize you have won.</h6>
+          </div>
+      </div>
+        </div>
+        <div id="result-draw-home" class="result-draw-home">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm">
+                <div class="container">
+              </div>
+              <br>
+              <div class="container">
+                 <div class="row" style="margin-left: 1px;">
+                  <div class="col-2" style="padding-left:0px;padding-right:0px;"><button class="btn-ball" id="4-ball" type="button"><b> 4 Ball</b></button></div>
+                  <div class="col-2" style="padding-left:0px;padding-right:0px;"><button class="btn-ball-2" id="5-ball" type="button"><b>5 Ball</b> </button></div>
+                    
+                    
+                    <!-- <button class="btn-ball" id="6-ball" type="button"><b>6 Ball</b> </button>
+                    <button class="btn-ball-2" id="7-ball" type="button"><b>7 Ball</b> </button>
+                    <button class="btn-ball" id="8-ball" type="button"><b>8 Ball</b> </button> -->
+      
+                 </div>
+                 <div class="row">
+                      <div id="panel-4-ball" class="container" style="margin-top: 20px;">
+                          <div class="row ball-group2" style="background-color: black; border-radius: 10px;padding: 20px;">
+                             <div class="col">
+                                 <div class="row">
+                                    <div class="col">
+                                      <button id="btn-qr1-0" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola0.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr1-1" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola1.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr1-2" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola2.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr1-3" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola3.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr1-4" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola4.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                  <div class="col">
+                                    <button id="btn-qr1-5" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola5.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                    <button id="btn-qr1-6" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola6.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                    <button id="btn-qr1-7" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola7.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                    <button id="btn-qr1-8" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola8.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                    <button id="btn-qr1-9" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola9.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                  </div>
+                               </div>
+                                 <hr>
+                               <div class="row" style="margin: 20px;">
+                                 <div class="col">
+                                  <img style="border-radius: 50%;" id="b4-1" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="b4-2" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                  <img style="border-radius: 50%;" id="b4-3" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                 <img style="border-radius: 50%;" id="b4-4" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                 </div>
+                               </div>
+                               <div class="row" style="margin: 20px;">
+                                 <div class="col"> 
+                                  <buttonc class="mouthfilter" style="width: 140px;" id="btn-b4-ulang" type="button">repeat
+                                 </buttonc></div>
+                                 <div class="col"> 
+                                  <buttonc class="mouthfilter" style="width: 140px;" id="btn-b4-show" type="button">Show
+                                 </buttonc></div>
+                              </div>   
+                             </div>
+                          </div>
+                      </div>
+      
+                      <div id="panel-5-ball" class="container" style="margin-top: 20px;display: none;">
+                        <div class="row ball-group2" style="background-color: black; border-radius: 10px;">
+                           <div class="col">
+                             <div class="row" style="margin: 20px;">
+                               <div class="col" style="padding-left:0px;padding-right:0px;">
+                                  <div class="row">
+                                      <div class="col">
+                                        <button id="btn-qr5-0" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola0.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                        <button id="btn-qr5-1" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola1.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                        <button id="btn-qr5-2" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola2.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                        <button id="btn-qr5-3" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola3.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                        <button id="btn-qr5-4" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola4.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      </div>
+                                   </div>
+                                   <div class="row">
+                                    <div class="col">
+                                      <button id="btn-qr5-5" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola5.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr5-6" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola6.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr5-7" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola7.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr5-8" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola8.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                      <button id="btn-qr5-9" class="btn-q-sx"><img style="border-radius: 50%;" src="images/bola9.png" alt="flag-ind-1-8" class="im-ball-q"></button>
+                                    </div>
+                                 </div>
+                                   <hr>
+                                   <div class="row" style="margin: 20px;">
+                                      <div class="col">
+                                       <img style="border-radius: 50%;" id="b5-1" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                       <img style="border-radius: 50%;" id="b5-2" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                       <img style="border-radius: 50%;" id="b5-3" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                      <img style="border-radius: 50%;" id="b5-4" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                      <img style="border-radius: 50%;" id="b5-5" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+                                      </div>
+                             </div>
+                             <div class="row" style="margin: 20px;">
+                              <div class="col"> 
+                                  <buttonc class="mouthfilter" style="width: 140px;" id="btn-b5-ulang" type="button">repeat
+                                 </buttonc></div>
+                                 <div class="col"> 
+                                  <buttonc class="mouthfilter" style="width: 140px;" id="btn-b5-show" type="button">Show
+                                 </buttonc></div>
+                            </div>    
+                           </div>
+                        </div>
+                    </div>
+      
+                 </div>
+                </div>  
+              </div>
+          </div>
+          </div>
+      
+        </div>
+      
+        <div class="alert-warning" id="alert-frame-query-4" style="display: none;">
+          <div style="padding: 50px;">
+            <div style="background-color: rgb(255, 255, 255);height: 50px;width: 50px;border-radius: 50px;padding: 3px;"><div style="background-color: rgb(255, 152, 27);height: 45px;width: 45px;border-radius: 50px;padding: 5px;"><img src="images/warning.png" alt="" width="20" height="20"></div> </div> 
+            <p style="color: white;">Nomor Anda</p>
+            <img style="border-radius: 50%;" id="b4-1-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b4-2-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b4-3-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b4-4-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <hr>
+              Hasil undian lotere Makau dalam 30 hari pertama
+          </div>
+           <div style="background-color: rgb(184, 185, 185);height: 80px;width: 100%;padding: 20px;">
+            <button type="button" id="btn-close-alert-query-4" class="button-alert-succsess">OK</button>
+          </div>
+        </div>
+      
+        <div class="alert-warning" id="alert-frame-query-5" style="display: none;">
+          <div style="padding: 50px;">
+            <div style="background-color: rgb(255, 255, 255);height: 50px;width: 50px;border-radius: 50px;padding: 3px;"><div style="background-color: rgb(255, 152, 27);height: 45px;width: 45px;border-radius: 50px;padding: 5px;"><img src="images/warning.png" alt="" width="20" height="20"></div> </div> 
+            <p style="color: white;">Nomor Anda</p>
+            <img style="border-radius: 50%;" id="b5-1-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b5-2-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b5-3-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b5-4-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <img style="border-radius: 50%;" id="b5-5-query" src="images/bolaz.png" alt="flag-ind-1-8" class="im-ball-q">
+              <hr>
+              Hasil undian lotere Makau dalam 30 hari pertama
+          </div>
+           <div style="background-color: rgb(184, 185, 185);height: 80px;width: 100%;padding: 20px;">
+            <button type="button" id="btn-close-alert-query-5" class="button-alert-succsess">OK</button>
+          </div>
+        </div>
+      
+      </div></div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between text-center" style="background-color:rgb(95 22 132);padding:20px;">
+            <div class="up-left-gigi-m"></div>
+            <div class="up-right-gigi-m"></div>
+            <div class="up-right-gigi-help-m"></div>
+            <span class="text-muted"></span>
+            <span class="text-center clcopy">
+              <a href="aboutus.html" class="bottom-nav"  style="text-decoration: none;">About Us</a>
+              <a href="contactus.html" class="bottom-nav"  style="text-decoration: none;">Contact Us</a>
+              <a href="resposibleplay.html" class="bottom-nav"  style="text-decoration: none;">Responsible play</a>   
+            </span>
+            <span class="float-none float-sm-right mt-1 mt-sm-0 text-center"></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between text-center" style="background-color:rgb(14, 9, 3);padding:20px;">
+            <span class="text-center clcopy">2022 Lottery. All Rights Reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><img src="images/cart_img.png" alt="" class="paymentcard-sx"></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById('hour-time').innerHTML =hours;
+      document.getElementById('minute-time').innerHTML =minutes;
+       document.getElementById('second-time').innerHTML =seconds;
+
+      // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      // + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+</body>
+
+</html>
+
